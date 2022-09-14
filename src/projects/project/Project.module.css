@@ -1,0 +1,40 @@
+.skill {
+    width: 400px;
+    background-color: cornflowerblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon {
+    height: 200px;
+    width: 400px;
+    background-color: #d796bc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    height: 30px;
+    width: 100px;
+    background-color: #4165ea;
+    border:none;
+    opacity: 30%;
+}
+.button:hover{
+    opacity: 90%;
+}
+.container{
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+/*.title{*/
+/*    display: flex;*/
+/*align-self: start}*/
+.description {
+    text-align: start;
+}
