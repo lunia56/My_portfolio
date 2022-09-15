@@ -5,3 +5,9 @@
     align-items: center;
     justify-content: flex-end;
 }
+
+@media(max-width: 370px){
+    .header {
+        justify-content: center;
+    }
+}

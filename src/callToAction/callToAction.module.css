@@ -1,0 +1,49 @@
+.callToActionBlock {
+    height: 35vh;
+    background-color: #98de7c;
+    display: flex;
+    align-items: center;
+
+}
+.title{
+    background-color: #edf39e;
+    margin-top: 0px;
+    text-align: center;
+}
+.button {
+    height: 30px;
+    width: 100px;
+    background-color: #4165ea;
+    border:none;
+    text-decoration-:#EDF39EFF ;
+}
+
+.container{
+    flex-direction: column;
+    justify-content: space-between ;
+    height: 70%;
+    border: 1px solid;
+}
+@media (max-width: 470px) {
+    .button {
+        height: 40px;
+        width: 150px;
+        font-size: 20px;
+    }
+    .callToActionBlock{
+        height: 45vh;
+
+    }
+}
+@media (max-width: 350px){
+    .callToActionBlock{
+        height: 50vh;
+
+    }
+    /*.button {*/
+    /*    height: 40px;*/
+    /*    width: 150px;*/
+    /*    font-size: 20px;*/
+    /*}*/
+
+}

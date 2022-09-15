@@ -10,7 +10,7 @@ function Skills() {
                 <h2 className={styler.title}>Skills</h2>
                 <div className={styler.skills}>
                     <Skill title={"JS"}
-                           description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab deserunt dicta harum reprehenderit sequi, vitae."}/>
+                           description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab deserunt dicta harum reprehenderit sequi, vitae.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab deserunt dicta harum reprehenderit sequi, vitae."}/>
                     <Skill title={"TypeScript"}
                            description={"Lorem ipsum dolor sit amet, consectetur adipisicing "}/>
                     <Skill title={"React"}

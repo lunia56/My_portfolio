@@ -1,9 +1,12 @@
 .skill{
     width: 250px;
+    min-height: 100px;
     background-color: cornflowerblue;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 1px double  ;
+    margin: 1px;
 }
 .icon{
     height: 60px;
@@ -14,3 +17,4 @@
 .description{
     text-align: center;
 }
+

@@ -2,13 +2,33 @@
     height: 100vh;
     background-color: #eae882;
 }
-
+.mainContainer{
+    flex-wrap: wrap;
+}
 .text{
     width: 300px;
-    background-color: #e9eae5;
+    background-color: #f39951;
 }
 .photo{
     width: 300px;
     height: 400px;
     background-color: #ea53a8;
+}
+@media(max-width:370px) {
+    .text h1 {
+        margin: 2px 0px;
+    }
+    .photo{
+        width: 250px;
+        height: 350px;
+        background-color: #ea53a8;
+        justify-content: center;
+
+    }
+}
+@media(max-width:720px) {
+    .mainContainer{
+        justify-content: center;
+
+    }
 }
