@@ -1,13 +1,16 @@
-import style from "./Projects.module.css"
+import style from "./Projects.module.scss"
 import styleContainer from "./../common/styles/Container.module.css"
-import s from "./Projects.module.css"
+import s from "./Projects.module.scss"
 import Project from "./project/Project";
+import {Title} from "../common/components/Title";
+
+
 
 function Projects() {
     return (
         <div className={s.projectsBlock}>
             <div className={styleContainer.container + " " + s.projectsContainer}>
-                <h2 className={s.title}>Projects</h2>
+                <Title title={'Project'}/>
                 <div className={s.skills}>
                     <Project title={"Project 1"}
                              description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab deserunt dicta harum reprehenderit sequi, vitae."}/>

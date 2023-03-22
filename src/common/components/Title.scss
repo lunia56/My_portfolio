@@ -1,0 +1,16 @@
+@import '../../common/styles/variables';
+
+.title{
+  h2{
+    font-family: FuturaBoldBT;
+    font-size: 110px;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1;
+    color: $titleColor;
+
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #333;
+  }
+}

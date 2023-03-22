@@ -1,6 +1,6 @@
 .skillsBlock {
     min-height: 100vh;
-    background-color: #7cdeb6;
+    background: url('https://demo.themecon.net/onlyme/html/images/project-bg.jpg');
     display: flex;
     align-items: center;
 }
