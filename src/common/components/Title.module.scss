@@ -1,5 +1,4 @@
-@import '../../common/styles/variables';
-
+@import '../styles/variables.module.scss';
 .title{
   h2{
     font-family: FuturaBoldBT;
@@ -7,7 +6,9 @@
     text-transform: uppercase;
     font-weight: 700;
     line-height: 1;
-    color: $titleColor;
+    color: $titleTextColor;
+    margin-bottom: 50px;
+    transform: translateY(-10px);
 
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 2px;

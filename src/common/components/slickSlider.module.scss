@@ -1,0 +1,54 @@
+@import './../styles/variables.module';
+
+.slickSlider{
+width: 500px;
+}
+
+.slickArrowRight{
+  background: transparent;
+  transition: all 0.5s ease;
+  border: 1px solid $textColor;
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  bottom: -60px;
+  left: 90px;
+  opacity: 0.2;
+  padding: 0;
+}
+.slickArrowRight:hover{
+  background-color: $primaryColor;
+  opacity: 0.9;
+  border: 1px solid $primaryColor;
+}
+.slickArrowleft{
+  background: transparent;
+  border: 1px solid $textColor;
+  transition: all 0.5s ease;
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transform: rotate(180deg);
+  position: absolute;
+  bottom: -60px;
+  left: 20px;
+  opacity: 0.2;
+  padding: 0;
+
+}
+slickArrowleft:hover{
+  background-color: $primaryColor;
+  opacity: 0.9;
+  border: 1px solid $primaryColor;
+}

@@ -1,8 +1,9 @@
-import style from "./Skills.module.css"
-import styleContainer from "./../common/styles/Container.module.css"
-import styler from "./Skills.module.css"
+import style from "./Skills.module.scss"
+import styleContainer from "../common/styles/Container.module.scss"
+import styler from "./Skills.module.scss"
 import Skill from "./skill/Skill";
 import {Title} from "../common/components/Title";
+
 
 function Skills() {
     return (

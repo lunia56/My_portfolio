@@ -1,32 +1,48 @@
+@import '../common/styles/variables.module';
+
 .projectsBlock {
     min-height: 100vh;
-    background-color: #b5e06c;
+    background-image: url("https://demo.themecon.net/onlyme/html/images/service-bg.jpg");
     display: flex;
     align-items: center;
-}
-
-.projectsContainer{
-    flex-direction: column;
-    justify-content: space-between ;
-    height: 70%;
-    flex-wrap: nowrap;
-}
-
-.skills{
-    border: 1px solid ;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-
-
-@media (max-width: 370px){
     .projectsContainer{
-        width: 100%;
-    }
-    .skills{
         flex-direction: column;
+        justify-content: space-between ;
+        height: 70%;
+        flex-wrap: nowrap;
+        @media (max-width: 370px){
+            width: 100%;
+        }
+        .projects{
+            border: 1px solid ;
+            width: 100%;
+            //display: flex;
+            //justify-content: space-between;
+            flex-wrap: wrap;
+            @media (max-width: 370px){
+                flex-direction: column;
+            }
+        }
     }
 }
+
+
+
+//
+//.title{
+//    h2{
+//        font-family: FuturaBoldBT;
+//        font-size: 110px;
+//        text-transform: uppercase;
+//        font-weight: 700;
+//        line-height: 1;
+//        color: $titleColor;
+//
+//        -webkit-text-fill-color: transparent;
+//        -webkit-text-stroke-width: 2px;
+//        -webkit-text-stroke-color: #333;
+//    }
+//}
+
+
+

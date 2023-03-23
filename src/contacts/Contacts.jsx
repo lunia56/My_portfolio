@@ -1,6 +1,6 @@
-import style from "./Contacts.module.css"
-import styleContainer from "./../common/styles/Container.module.css"
-import styler from "./Contacts.module.css"
+import style from "./Contacts.module.scss"
+import styleContainer from "../common/styles/Container.module.scss"
+import styler from "./Contacts.module.scss"
 
 function Contacts() {
     return (

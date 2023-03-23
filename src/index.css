@@ -2,15 +2,14 @@
   font-family: 'FuturaBoldBT';
   src: url('/src/common/fonts/FuturaBoldBT.ttf')
 }
-body {
+
+body p {
   padding: 0px;
-  margin: 0px auto ;
   font-size: 22px;
   line-height: 1.8;
   color: #acacac;
   font-family: FuturaBoldBT sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 

@@ -1,5 +1,5 @@
-import s from "./Footer.module.css"
-import styleContainer from "../common/styles/Container.module.css";
+import s from "./Footer.module.scss"
+import styleContainer from "../common/styles/Container.module.scss";
 import {FaCopyright} from "react-icons/fa";
 import {AiOutlineCopyrightCircle} from "react-icons/ai";
 

@@ -1,0 +1,133 @@
+@import "../../common/styles/variables.module";
+
+.project {
+  width: 400px;
+  background-color: cornflowerblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media (max-width: 715px) {
+    width: 40%
+  }
+  @media (max-width: 370px) {
+    width: 100%
+  }
+  @media (max-width: 370px) {
+    width: 100%
+  }
+
+  .imgContainer {
+    height: 200px;
+    width: 400px;
+    background-color: #d796bc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://img.freepik.com/free-vector/programmer-graphic-designer-characters-create-website-man-with-laptop-woman-with-tablet-deve_107791-7443.jpg?w=740&t=st=1663250172~exp=1663250772~hmac=db8dd8057b010894e7ef20fc15f48b6cfe4044dd6de5ecfe3db89b78e1b9c101);
+    background-size: cover;
+    background-position: center;
+    @media (max-width: 1017px) {
+      width: 100%;
+    }
+
+    .button {
+      height: 30px;
+      width: 100px;
+      background-color: #4165ea;
+      border: none;
+      opacity: 30%;
+
+      &:hover {
+        opacity: 90%;
+      }
+
+      @media (max-width: 370px) {
+        height: 40px;
+        width: 150px;
+        font-size: 20px;
+      }
+    }
+  }
+
+  .container {
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    @media (max-width: 1017px) {
+      width: 90%;
+    }
+
+    .title {
+      display: flex;
+      align-self: start
+    }
+
+    .description {
+      text-align: start;
+    }
+
+  }
+}
+
+
+.portfolioType {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: $primaryColor;
+  font-weight: 700;
+  font-family: FuturaBoldBT sans-serif;
+  letter-spacing: 1px;
+}
+
+.contentTitle {
+  font-size: 36px;
+  line-height: 44px;
+  margin-bottom: 12px;
+  color: $textColor;
+  font-family: FuturaBoldBT sans-serif;
+  font-weight: 500;
+
+}
+
+.linkDefault {
+  display: inline-block;
+  margin-top: 37px;
+
+  a {
+    font-weight: 500;
+    color: $textColor;
+    font-family: FuturaBoldBT sans-serif;
+  }
+}
+
+.linkSpan {
+  height: 53px;
+  width: 53px;
+  background: $primaryColor;
+  border-radius: 100%;
+  display: inline-flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+.linkSpan:hover {
+  animation: pulsate 1s ease-in infinite;
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(0.9); /* Return to the original size */
+  }
+}

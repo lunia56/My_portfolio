@@ -1,5 +1,5 @@
-import s from "./callToAction.module.css"
-import styleContainer from "../common/styles/Container.module.css";
+import s from "./callToAction.module.scss"
+import styleContainer from "../common/styles/Container.module.scss";
 
 function CallToAction() {
     return (
