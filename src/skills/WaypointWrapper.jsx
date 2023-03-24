@@ -3,11 +3,11 @@ import {Waypoint} from "react-waypoint";
 import s from "./Skills.module.scss";
 import Skill from "./skill/Skill";
 
-export const WaypointWrapper = ({title1,title2,title3,description1,description2,description3}) => {
+export const WaypointWrapper = ({data}
+) => {
     const [isVisible1, setIsVisible1] = useState(false);
     const [isVisible2, setIsVisible2] = useState(false);
     const [isVisible3, setIsVisible3] = useState(false);
-
 
 
     const onEnterHandler = (setIsVisible) => {
@@ -40,8 +40,8 @@ export const WaypointWrapper = ({title1,title2,title3,description1,description2,
             />
             {isVisible1 && (
                 <div className={s.block}>
-                    <Skill title={title1}
-                           description={description1}/>
+                    <Skill title={data.block1.title}
+                           description={data.block2.description} icon={data.block1.icon}/>
                     <Waypoint onEnter={() => onEnterHandler(setIsVisible2)}
                               fireOnRapidScroll={false}
                               bottomOffset='20%'
@@ -50,8 +50,8 @@ export const WaypointWrapper = ({title1,title2,title3,description1,description2,
             )}
             {isVisible2 && (
                 <div className={s.block}>
-                    <Skill title={title2}
-                           description={description2}/>
+                    <Skill title={data.block2.title}
+                           description={data.block2.description} icon={data.block2.icon}/>
                     <Waypoint onEnter={() => onEnterHandler(setIsVisible3)}
                               fireOnRapidScroll={false}
                               onPositionChange={(props) => handlePositionChange('isVisible3', props)}
@@ -61,8 +61,8 @@ export const WaypointWrapper = ({title1,title2,title3,description1,description2,
             )}
             {isVisible3 && (
                 <div className={s.block}>
-                    <Skill title={title3}
-                           description={description3}/>
+                    <Skill title={data.block3.title}
+                           description={data.block3.description} icon={data.block3.icon}/>
                 </div>
             )}
         </div>
