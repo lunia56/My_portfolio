@@ -2,7 +2,7 @@
 .title{
   h2{
     font-family: FuturaBoldBT;
-    font-size: 110px;
+    font-size: 82px;
     text-transform: uppercase;
     font-weight: 700;
     line-height: 1;
@@ -13,5 +13,8 @@
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #333;
+    @media (max-width: 1200px){
+      font-size: 100px;
+    }
   }
 }

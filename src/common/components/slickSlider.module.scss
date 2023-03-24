@@ -1,8 +1,6 @@
 @import './../styles/variables.module';
 
-.slickSlider{
-width: 500px;
-}
+
 
 .slickArrowRight{
   background: transparent;
@@ -18,9 +16,14 @@ width: 500px;
   cursor: pointer;
   position: absolute;
   bottom: -60px;
-  left: 90px;
+  right:320px;
   opacity: 0.2;
   padding: 0;
+  @media (max-width: 1200px){
+    bottom: -20px;
+    left: 130px;
+  }
+
 }
 .slickArrowRight:hover{
   background-color: $primaryColor;
@@ -42,9 +45,13 @@ width: 500px;
   transform: rotate(180deg);
   position: absolute;
   bottom: -60px;
-  left: 20px;
+  right: 410px;
   opacity: 0.2;
   padding: 0;
+  @media (max-width: 1200px){
+    bottom: -20px;
+    left: 50px;
+  }
 
 }
 slickArrowleft:hover{

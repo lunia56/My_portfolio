@@ -1,6 +1,8 @@
 .skillsBlock {
     min-height: 100vh;
     background: url('https://demo.themecon.net/onlyme/html/images/project-bg.jpg');
+    backgroundSize: cover;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
 }
@@ -17,6 +19,7 @@
 }
 .skills{
     border: 1px solid red;
+    min-height: 590px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -28,3 +31,64 @@
     }
 
 }
+
+
+.block {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+.skillSection{
+    //width: 50%;
+    //max-width: 535px;
+    //margin-bottom: 50px;
+    //background: #a0a9cc;
+    //padding: 15px 30px 20px;
+    //border-radius: 5px;
+    //border: 1px solid #26272d;
+    //position: relative;
+    //z-index: 1;
+    //align-self: stretch;
+    //transform: translateX(30px);
+    //opacity: 0;
+    //visibility: hidden;
+    //transition: all 1.5s ease 0.1s;
+}
+//.block {
+//    width: 50%;
+//    max-width: 535px;
+//    margin-bottom: 50px;
+//    background: #1c1d21;
+//    padding: 15px 30px 20px;
+//    border-radius: 5px;
+//    border: 1px solid #26272d;
+//    color: wheat;
+//    position: relative;
+//    z-index: 1;
+//    align-self: stretch;
+//    transform: translateX(30px);
+//    opacity: 0;
+//    visibility: hidden;
+//    transition: all 1.5s ease 0.1s;
+//}
+//
+//.block.show {
+//    transform: translateX(0);
+//    opacity: 1;
+//    visibility: visible;
+//    color: wheat;
+//
+//}

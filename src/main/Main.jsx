@@ -1,8 +1,10 @@
 import style from "./Main.module.scss"
 import styleContainer from "../common/styles/Container.module.scss"
 import {ReactSlickDemo} from "../common/components/slick-slide";
+import {useRef} from "react";
 
 function Main() {
+
     return (
         <div className={style.mainBlock}>
             <div className={`${styleContainer.container} ${style.mainContainer}`}>
