@@ -12,6 +12,8 @@ import StyledComponentsIcon from '../common/IconsSkills/StyledComponentsIcon'
 import SassIcon from '../common/IconsSkills/SassIcon'
 import AxiosIcon from '../common/IconsSkills/AxiosIcon'
 import JestIcon from '../common/IconsSkills/JestIcon'
+import AntdIcon from "../common/IconsSkills/AntdIcon";
+import FormikIcon from "../common/IconsSkills/FormikIcon";
 
 const skills1 = {
     block1:{
@@ -42,10 +44,11 @@ const skills2 ={
         description: "Architectural style for an application program interface (API) that uses HTTP requests to access and use data."
     },
     block3:{
-        icon: <StyledComponentsIcon />,
-        title: "Styled Components",
-        description: "Is a CSS-in-JS styling solution that creates a platform for developers to write actual CSS to style components."
+        icon:<AntdIcon/>,
+        title:"Ant Design",
+        description:" UI library based on React, providing modular and customizable components with accessibility and internationalization support."
     },
+
 }
 const skills3 ={
     block1:{

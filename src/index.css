@@ -1,15 +1,7 @@
-@font-face {
-  font-family: 'FuturaBoldBT';
-  src: url('/src/common/fonts/FuturaBoldBT.ttf')
-}
+
 
 body p {
-  padding: 0px;
-  font-size: 22px;
-  line-height: 1.8;
-  color: #acacac;
-  font-family: FuturaBoldBT sans-serif;
-  -webkit-font-smoothing: antialiased;
+
 }
 
 
@@ -19,6 +11,8 @@ code {
 }
 *{
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 a{
   text-decoration: none;

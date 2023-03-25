@@ -1,34 +1,112 @@
+@import "../common/styles/variables.module";
+@import '../common/styles/mixins.module';
+
 .mainBlock {
-    height: 100vh;
-    background-color: #eae882;
-}
-.mainContainer{
+  height: 100vh;
+  background-image: url("https://demo.themecon.net/onlyme/html/images/home2-hero-bg.jpg");
+  backgroundSize: cover;
+  background-repeat: no-repeat;
+
+  .mainContainer {
     flex-wrap: wrap;
-}
-.text{
-    width: 300px;
-    background-color: #f39951;
-}
-.photo{
-    width: 300px;
-    height: 400px;
-    background-color: #ea53a8;
-}
-@media(max-width:370px) {
-    .text h1 {
-        margin: 2px 0px;
-    }
-    .photo{
-        width: 250px;
-        height: 350px;
-        background-color: #ea53a8;
+    @media(max-width: 720px) {
+      .mainContainer {
         justify-content: center;
 
+      }
     }
-}
-@media(max-width:720px) {
-    .mainContainer{
-        justify-content: center;
 
+    .contentWrapper {
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+      position: relative;
+
+      .verticalLogo {
+        position: absolute;
+        top: 10px;
+        left: 150px;
+      }
+
+      .heroContent {
+        display: flex;
+        flex-direction: column;
+        justify-content:  center;
+        align-items: flex-start;
+        width: 100%;
+        .title {
+          @include myFont(142px, bold, $textColor);
+          background: url('https://demo.themecon.net/onlyme/html/images/hero-title-pettern-bg.png') no-repeat 95% center / contain;
+          line-height: 0.8;
+          position: relative;
+          z-index: 99;
+          display: inline-block;
+          margin-left: -10px;
+          transition: all 1.2s ease 0.4s;
+        }
+
+        .description {
+          @include myFont(40px, 500, $textColor);
+          margin-top: 16px;
+          transition: all 1.2s ease 0.7s;
+          z-index: 99;
+
+        }
+
+        .linkDefault {
+          display: flex;
+          align-items: center;
+          margin-top: 15px;
+
+          a {
+            @include myFont(22px, 500, $textColor);
+          }
+        }
+
+        .linkSpan {
+          @include linkSpan
+        }
+      }
+
+      .photo {
+        width: 478px;
+        height: 100%;
+        background-image: url("../common/image/mainImage.jpeg");
+        background-position:-450px ;
+        background-repeat: no-repeat;
+        position: absolute;
+        z-index: 1;
+        right: 0px;
+        @media(max-width: 370px) {
+          & {
+            width: 250px;
+            height: 350px;
+            background-color: #ea53a8;
+            justify-content: center;
+          }
+        }
+      }
+      .texture{
+        position: absolute;
+        z-index: 0;
+        right: -80px;
+        bottom: 30px;
+      }
     }
+  }
+
 }
+
+
+@media(max-width: 370px) {
+  .text h1 {
+    margin: 2px 0px;
+  }
+
+}
+
+
+
+

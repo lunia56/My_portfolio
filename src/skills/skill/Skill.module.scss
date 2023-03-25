@@ -1,20 +1,55 @@
+@import '../../common/styles/mixins.module';
+@import '../../common/styles/variables.module';
 .skill{
     width: 250px;
     min-height: 100px;
-    background-color: cornflowerblue;
+    background-color: transparent;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px double  ;
-    margin: 1px;
-}
-.icon{
-    height: 60px;
-    width: 60px;
-    //background-color: #d796bc;
+    margin-bottom: 10px;
+    position: relative;
+    &:hover {
+        .skillDescription{
+            opacity: 1;
+        }
+    }
+    .skillTitle{
+        @include myFont(25px,400,$textColor);
+        line-height: 44px;
+        margin-bottom: 12px;
+    }
+    .skillIcon{
+        height: 60px;
+        width: 60px;
 
+    }
+    .skillDescription{
+        @include myFont(17px,100,$secondaryTextColor);
+        line-height: 1.6;
+        text-align: justify;
+        min-width: 150px;
+        position: absolute;
+        top: -35px;
+        left: 190px;
+        z-index: 999;
+        padding: 10px;
+        opacity: 0;
+        transition: opacity 0.2s ease-in-out;
+        border: 1px solid #ababab;
+        border-radius: 5%;
+        box-shadow: 0 2px 4px rgba(255, 255, 255, 0.05),
+        0 4px 6px rgba(255, 255, 255, 0.07),
+        0 8px 16px rgba(255, 255, 255, 0.1),
+        0 0 1px rgba(255, 255, 255, 0.3);
+        @media(max-width: 1200px){
+            top: -20px;
+            left: 190px
+        }
+    }
 }
-.description{
-    text-align: center;
-}
+
+
+
+
 

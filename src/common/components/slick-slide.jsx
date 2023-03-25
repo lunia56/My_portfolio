@@ -12,7 +12,7 @@ function NextArrow({onClick}) {
 
 function PrevArrow({onClick}) {
     return (
-        <button className={s.slickArrowleft} onClick={onClick}><img src="https://demo.themecon.net/onlyme/html/images/arrow-right-white.png" alt="arrow"/></button>)
+        <button className={s.slickArrowLeft} onClick={onClick}><img src="https://demo.themecon.net/onlyme/html/images/arrow-right-white.png" alt="arrow"/></button>)
 
 }
 

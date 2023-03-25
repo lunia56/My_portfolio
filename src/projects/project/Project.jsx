@@ -7,7 +7,7 @@ function Project({titleProject, title, description,image,id}) {
             <img className={s.slickImage} src={image} alt="projectImage"/>
             <div className={s.slickInfo}><span className={s.portfolioType}>{titleProject}</span>
                 <h2 className={s.contentTitle}>{title}</h2>
-                <p>{description}</p>
+                <p className={s.contentDescription}>{description}</p>
                 <div style={{display:'flex',flexDirection:'column'}}>
                     <div className={s.linkDefault}>
                         <a href="#">View Live</a>

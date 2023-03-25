@@ -8,7 +8,7 @@ const ReduxIcon = () => {
                   fill="#764abc"
             />
         </svg>
-    );
+       );
 };
 
 export default ReduxIcon;

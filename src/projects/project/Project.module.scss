@@ -1,75 +1,5 @@
 @import "../../common/styles/variables.module";
-
-//.project {
-//  width: 400px;
-//  background-color: cornflowerblue;
-//  display: flex;
-//  flex-direction: column;
-//  align-items: center;
-//  @media (max-width: 715px) {
-//    width: 40%
-//  }
-//  @media (max-width: 370px) {
-//    width: 100%
-//  }
-//  @media (max-width: 370px) {
-//    width: 100%
-//  }
-//
-//  .imgContainer {
-//    height: 200px;
-//    width: 400px;
-//    background-color: #d796bc;
-//    display: flex;
-//    align-items: center;
-//    justify-content: center;
-//    background-image: url(https://img.freepik.com/free-vector/programmer-graphic-designer-characters-create-website-man-with-laptop-woman-with-tablet-deve_107791-7443.jpg?w=740&t=st=1663250172~exp=1663250772~hmac=db8dd8057b010894e7ef20fc15f48b6cfe4044dd6de5ecfe3db89b78e1b9c101);
-//    background-size: cover;
-//    background-position: center;
-//    @media (max-width: 1017px) {
-//      width: 100%;
-//    }
-//
-//    .button {
-//      height: 30px;
-//      width: 100px;
-//      background-color: #4165ea;
-//      border: none;
-//      opacity: 30%;
-//
-//      &:hover {
-//        opacity: 90%;
-//      }
-//
-//      @media (max-width: 370px) {
-//        height: 40px;
-//        width: 150px;
-//        font-size: 20px;
-//      }
-//    }
-//  }
-
-//  .container {
-//    width: 380px;
-//    display: flex;
-//    flex-direction: column;
-//    justify-content: flex-start;
-//    margin-bottom: 10px;
-//    @media (max-width: 1017px) {
-//      width: 90%;
-//    }
-//
-//    .title {
-//      display: flex;
-//      align-self: start
-//    }
-//
-//    .description {
-//      text-align: start;
-//    }
-//
-//  }
-//}
+@import "../../common/styles/mixins.module";
 
 .slickContainer{
   display: flex;
@@ -86,55 +16,37 @@
       width: 500px;
       padding-top: 15px;
     }
-
     .portfolioType {
-      font-size: 14px;
+      @include myFont(14px,700,$primaryColor);
       text-transform: uppercase;
-      color: $primaryColor;
-      font-weight: 700;
-      font-family: FuturaBoldBT sans-serif;
       letter-spacing: 1px;
     }
     .contentTitle {
-      font-size: 36px;
+      @include myFont(36px,500,$textColor);
       line-height: 44px;
       margin-bottom: 12px;
-      color: $textColor;
-      font-family: FuturaBoldBT sans-serif;
-      font-weight: 500;
+    }
+    .contentDescription{
+      @include myFont(20px,430,$secondaryTextColor);
+      line-height: 1.6;
+      text-align: justify;
     }
 
     .linkDefault {
       display: flex;
       align-items: center;
       margin-top: 15px;
-
       a {
-        font-weight: 500;
-        color: $textColor;
-        font-family: FuturaBoldBT sans-serif;
+        @include myFont(22px,500,$textColor);
       }
     }
-    .linkSpan {
-      height: 53px;
-      width: 53px;
-      background: $primaryColor;
-      border-radius: 100%;
-      display: inline-flex;
-      flex-flow: column;
-      align-items: center;
-      justify-content: center;
-      margin-left: 10px;
-      margin-bottom: 5px;
-      &:hover {
-        animation: pulsate 1.5s ease-in infinite;
-      }
+    .linkSpan{
+      @include linkSpan
     }
+
     .count{
       margin-left: 10px;
-      color:$primaryColor;
-      font-size: 20px;
-      font-weight: 700;
+      @include myFont(20px,700,$primaryColor);
     }
   }
 
@@ -148,25 +60,4 @@
 
 
 
-@keyframes pulsate {
-  0% {
-    transform: scale(1);
-    box-shadow: 0 0 0 0px rgba(255, 0, 0, 0);
-  }
-  50% {
-    transform: scale(1.2);
-    box-shadow: 0 0 0 5px rgba(255, 0, 0, 0.4);
-    opacity: 0.5;
-  }
-  75% {
-    transform: scale(0.9);
-    box-shadow: 0 0 0 7px rgba(255, 0, 0, 0.7);
-    opacity: 0.9;
-  }
-  100% {
-    transform: scale(0.9);
-    box-shadow: 0 0 0 7px rgba(255, 0, 0, 0.4);
-    opacity: 0.5;
 
-  }
-}

@@ -30,7 +30,7 @@
   opacity: 0.9;
   border: 1px solid $primaryColor;
 }
-.slickArrowleft{
+.slickArrowLeft{
   background: transparent;
   border: 1px solid $textColor;
   transition: all 0.5s ease;
@@ -54,7 +54,7 @@
   }
 
 }
-slickArrowleft:hover{
+.slickArrowLeft:hover{
   background-color: $primaryColor;
   opacity: 0.9;
   border: 1px solid $primaryColor;
