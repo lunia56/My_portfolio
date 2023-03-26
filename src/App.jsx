@@ -7,20 +7,22 @@ import Projects from "./projects/Projects";
 import CallToAction from "./callToAction/callToAction";
 import Contacts from "./contacts/Contacts";
 import Footer from "./footer/Footer";
+import React, {useRef, useState} from "react";
 
 
 function App() {
     return (
 
-            <div className="App">
-                <Header/>
-                <Main/>
-                <Skills/>
-                <Projects/>
-                <CallToAction/>
-                <Contacts/>
-                <Footer/>
-            </div>
+        <div className="App">
+            <Header/>
+            <Main/>
+            <Skills/>
+            <Projects/>
+            <CallToAction/>
+            <Contacts/>
+            <Footer/>
+
+        </div>
 
     );
 }
