@@ -4,7 +4,7 @@ import styler from "./Contacts.module.scss"
 
 function Contacts() {
     return (
-        <div className={styler.contactsBlock}>
+        <div className={styler.contactsBlock} id='contactsBlock'>
             <div className={styleContainer.container + " " + styler.contactsContainer}>
                 <h2 className={styler.title}>Contacts</h2>
                 <div>

@@ -8,23 +8,26 @@ import CallToAction from "./callToAction/callToAction";
 import Contacts from "./contacts/Contacts";
 import Footer from "./footer/Footer";
 import React, {useRef, useState} from "react";
-import {Modal} from "./common/components/Modal/Modal";
+import {Modal, MyModal} from "./common/components/Modal/Modal";
 
 
 function App() {
 
     const [isVisible, setIsVisible] = useState(true);
+    const [isOpen, setIsOpen] = useState(false);
 
-    const hideElements = (isVisible) => {
+    const modalHandler = () => {
+        setIsOpen(!isOpen);
         setIsVisible(isVisible);
     };
+
     return (
 
         <div className="App">
 
 
-            <Modal/>
-            <Header hideElement={hideElements} isVisible={isVisible}/>
+            <MyModal modalHandler={modalHandler} isOpen={isOpen}/>
+            <Header modalHandler={modalHandler} isOpen={isOpen}/>
             {isVisible && (
                 <>
                     <Main/>

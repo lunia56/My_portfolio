@@ -72,7 +72,7 @@ const skills3 ={
 function Skills() {
 
     return (
-        <div className={s.skillsBlock}>
+        <div className={s.skillsBlock} id='skillsBlock'>
             <div className={styleContainer.container + " " + s.skillsContainer}>
                 <Title title={'Skills'}/>
                 <div className={s.skills}>

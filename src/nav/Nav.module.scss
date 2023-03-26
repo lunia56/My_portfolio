@@ -1,6 +1,10 @@
 .nav {
    border: 1px solid red;
-   width: 300px;
+   padding-left: 200px;
+   width: 100%;
    display: flex;
-   justify-content: space-between;
+   flex-direction: column;
+   justify-content: space-around;
+   height: 100%;
+   align-items: flex-start;
 }

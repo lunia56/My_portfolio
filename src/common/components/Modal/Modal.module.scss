@@ -1,0 +1,23 @@
+@import '../../styles/variables.module';
+.modal {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modalContent {
+  width: 100%;
+  height: 100%;
+  background-color: $modalColor;
+  overflow: auto;
+  box-sizing: border-box;
+  //display: flex;
+  //flex-direction: column;
+  //justify-content: flex-start;
+}

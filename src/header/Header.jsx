@@ -1,25 +1,16 @@
 import style from "./Header.module.scss"
+import s from '../common/components/Modal/Modal.module.scss'
 import Nav from "../nav/Nav";
 import {Modal} from "../common/components/Modal/Modal";
 import {useState} from "react";
 
 function Header(props) {
-    const [isOpen, setIsOpen] = useState(false);
-
-    const modalHandler = () => {
-        setIsOpen(!isOpen);
-        props.hideElement(!props.isVisible)
-    };
 
     return (
         <div className={style.header}>
 
-            <button onClick={modalHandler}>{isOpen?'Закрыть':'Открыть'}</button>
-            {isOpen && (
-                <Modal >
-                    <Nav/>
-                </Modal>
-            )}
+            <button onClick={props.modalHandler}>{props.isOpen ? 'Закрыть' : 'Открыть'}</button>
+
         </div>
     );
 }

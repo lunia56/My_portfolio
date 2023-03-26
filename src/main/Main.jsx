@@ -6,7 +6,7 @@ import s from "../projects/project/Project.module.scss";
 function Main() {
 
     return (
-        <div className={style.mainBlock}>
+        <div className={style.mainBlock} id='mainBlock'>
             <div className={`${styleContainer.container} ${style.mainContainer}`}>
                 <div className={style.contentWrapper}>
                     <span className={style.verticalLogo}><img src="https://demo.themecon.net/onlyme/html/images/vertical-logo.png" alt="verticalLogo"/></span>

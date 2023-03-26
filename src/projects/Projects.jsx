@@ -7,7 +7,7 @@ import React from "react";
 function Projects() {
 
     return (
-        <div className={s.projectsBlock}>
+        <div className={s.projectsBlock} id='portfolioBlock'>
             <div className={styleContainer.container + " " + s.projectsContainer}>
                 <Title title={'Projects'}/>
                 <div className={s.projects}>
