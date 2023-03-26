@@ -8,19 +8,33 @@ import CallToAction from "./callToAction/callToAction";
 import Contacts from "./contacts/Contacts";
 import Footer from "./footer/Footer";
 import React, {useRef, useState} from "react";
+import {Modal} from "./common/components/Modal/Modal";
 
 
 function App() {
+
+    const [isVisible, setIsVisible] = useState(true);
+
+    const hideElements = (isVisible) => {
+        setIsVisible(isVisible);
+    };
     return (
 
         <div className="App">
-            <Header/>
-            <Main/>
-            <Skills/>
-            <Projects/>
-            <CallToAction/>
-            <Contacts/>
-            <Footer/>
+
+
+            <Modal/>
+            <Header hideElement={hideElements} isVisible={isVisible}/>
+            {isVisible && (
+                <>
+                    <Main/>
+                    <Skills/>
+                    <Projects/>
+                    <CallToAction/>
+                    <Contacts/>
+                    <Footer/>
+                </>
+            )}
 
         </div>
 

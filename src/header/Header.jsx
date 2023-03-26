@@ -1,13 +1,25 @@
 import style from "./Header.module.scss"
 import Nav from "../nav/Nav";
+import {Modal} from "../common/components/Modal/Modal";
+import {useState} from "react";
 
-function Header() {
+function Header(props) {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const modalHandler = () => {
+        setIsOpen(!isOpen);
+        props.hideElement(!props.isVisible)
+    };
+
     return (
         <div className={style.header}>
-            <div className={style.hamburger}>
-                <span></span><span></span><span></span>
-            </div>
-            <Nav/>
+
+            <button onClick={modalHandler}>{isOpen?'Закрыть':'Открыть'}</button>
+            {isOpen && (
+                <Modal >
+                    <Nav/>
+                </Modal>
+            )}
         </div>
     );
 }
