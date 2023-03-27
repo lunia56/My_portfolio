@@ -1,16 +1,12 @@
 import style from "./Header.module.scss"
-import s from '../common/components/Modal/Modal.module.scss'
-import Nav from "../nav/Nav";
-import {Modal} from "../common/components/Modal/Modal";
-import {useState} from "react";
+import HamburgerButton from "../common/components/HumburgerButton/HamburgerButton";
 
-function Header(props) {
+function Header({modalHandler,isOpen}) {
 
     return (
         <div className={style.header}>
 
-            <button onClick={props.modalHandler}>{props.isOpen ? 'Закрыть' : 'Открыть'}</button>
-
+            <HamburgerButton modalHandler={modalHandler}isOpen={isOpen}/>
         </div>
     );
 }

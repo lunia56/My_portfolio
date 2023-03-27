@@ -1,6 +1,6 @@
-import style from "./Contacts.module.scss"
 import styleContainer from "../common/styles/Container.module.scss"
 import styler from "./Contacts.module.scss"
+
 
 function Contacts() {
     return (
@@ -18,8 +18,12 @@ function Contacts() {
                 </div>
 
             </div>
+
         </div>
     );
 }
 
 export default Contacts;
+
+
+

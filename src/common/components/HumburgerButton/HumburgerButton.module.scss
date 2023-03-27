@@ -1,0 +1,31 @@
+.hamburgerButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  height: 80px;
+  outline: none;
+  margin-right: 50px;
+  position: relative;
+  width: 80px;
+
+  .hamburgerBar {
+    display: block;
+    height: 4px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 32px;
+  }
+  .hamburgerBarMiddle{
+    display: block;
+    height: 3px;
+    left: 70%;
+    position: absolute;
+    top: 53%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+
+

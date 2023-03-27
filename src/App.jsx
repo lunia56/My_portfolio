@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Header from "./header/Header";
 import Main from "./main/Main";
@@ -7,8 +6,8 @@ import Projects from "./projects/Projects";
 import CallToAction from "./callToAction/callToAction";
 import Contacts from "./contacts/Contacts";
 import Footer from "./footer/Footer";
-import React, {useRef, useState} from "react";
-import {Modal, MyModal} from "./common/components/Modal/Modal";
+import React, {useState} from "react";
+import {MyModal} from "./common/components/Modal/Modal";
 
 
 function App() {
