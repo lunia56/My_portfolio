@@ -1,0 +1,52 @@
+@import "../common/styles/mixins.module";
+@import "../common/styles/variables.module";
+
+.formContainer{
+  padding-top: 100px;
+.formItem {
+  width: 350px;
+  height: 100%;
+  display: flex;
+
+  & input, textarea {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: $titleTextColor solid 1px;
+
+    color: #fff;
+    font-size: 17px;
+    padding: 10px 0;
+    max-width: 100%;
+    margin-bottom: 20px;
+
+    &:focus {
+      outline: none;
+    }
+
+
+  }
+
+  .errorMessage {
+    color: $primaryColor;
+    width: 180px;
+  }
+}
+
+.formItemTextarea {
+  height: 100px;
+}
+
+.buttonSubmit {
+  border: none;
+  height: 50px;
+  padding: 0 40px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 3px;
+  background: #f43534;
+  font-weight: 500;
+  color: #fff;
+}
+
+}

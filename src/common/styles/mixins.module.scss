@@ -19,12 +19,12 @@
     animation: pulsate 1.5s ease-in infinite;
   }
 }
-@mixin myFont($fontSize,$fontWeight,$color){
+@mixin myFont($fontSize,$fontWeight,$color,$font:'FuturaBoldBT'){
   @font-face {
     font-family: 'FuturaBoldBT';
     src: url('../fonts/FuturaBoldBT.ttf')
   }
-  font-family:  'FuturaBoldBT' ,sans-serif;
+  font-family:  $font,sans-serif ;
   font-weight: $fontWeight;
   font-size:$fontSize;
   color:$color;

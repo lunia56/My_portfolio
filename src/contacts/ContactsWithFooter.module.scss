@@ -1,0 +1,119 @@
+@import "../common/styles/mixins.module";
+@import "../common/styles/variables.module";
+
+.contactsBlock {
+  height: 100vh;
+  background-image: url("https://demo.themecon.net/onlyme/html/images/service-bg.jpg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.contactsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 70%;
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    & h1{
+      text-transform: uppercase;
+      color: #fff;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+//.form {
+//  display: flex;
+//  flex-direction: column;
+//  border: 1px solid;
+//  align-items: center;
+//}
+
+
+.button {
+  height: 30px;
+  width: 100px;
+  background-color: #4165ea;
+  border: none;
+}
+
+.contactBlock {
+  display: flex;
+  height: 80%;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  .myContacts {
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    & h3 {
+      text-transform: uppercase;
+      @include myFont(16px, 700, $secondaryTextColor, 'roboto');
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      display: block;
+    }
+
+    & p {
+      @include myFont(22px, normal, $textColor, 'Futura Bk BT');
+      line-height: 1.8;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .email {
+      color: $primaryColor
+    }
+  }
+
+}
+
+@media (max-width: 470px) {
+  .formItem {
+    width: 200px;
+    height: 20px;
+  }
+  .formItemTextarea {
+    height: 50px;
+  }
+  .button {
+    height: 40px;
+    width: 150px;
+    font-size: 20px;
+  }
+  .form {
+    width: 90%;
+    align-items: center;
+  }
+  .formItem {
+    width: 100%;
+  }
+}
+
+@media (max-width: 370px) {
+  .contactsBlock {
+    height: 60vh;
+  }
+  .contactsContainer {
+    width: 100%;
+  }
+  .form {
+    width: 100%;
+    align-items: center;
+  }
+  .formItem {
+    width: 90%;
+  }
+
+}

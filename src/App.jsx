@@ -4,7 +4,7 @@ import Main from "./main/Main";
 import Skills from "./skills/Skills";
 import Projects from "./projects/Projects";
 import CallToAction from "./callToAction/callToAction";
-import Contacts from "./contacts/Contacts";
+import ContactsWithFooter from "./contacts/ContactsWithFooter";
 import Footer from "./footer/Footer";
 import React, {useState} from "react";
 import {MyModal} from "./common/components/Modal/Modal";
@@ -33,8 +33,8 @@ function App() {
                     <Skills/>
                     <Projects/>
                     <CallToAction/>
-                    <Contacts/>
-                    <Footer/>
+                    <ContactsWithFooter/>
+                    {/*<Footer/>*/}
                 </>
             )}
 

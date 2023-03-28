@@ -14,66 +14,69 @@
     justify-content: space-around;
     align-items: flex-start;
 
-    & ul li {
-      list-style-type: none;
-      position: relative;
-      & a {
-        position: absolute;
-        top: -8px;
-        left: -1px;
-      }
-      & img {
-        width: 40px;
-        height: 40px;
-        padding: 5px;
-      }
-    }
+  }
+
+  & ul li {
+    list-style-type: none;
+    position: relative;
 
     & a {
-      @include myFont(70px, 700, $titleTextColor);
-      line-height: normal;
-      display: inline-block;
-      position: relative;
-      transform: translateY(-20px);
-      transition: all 0.8s ease;
-    }
-  }
-
-  .followMe {
-    color: $titleTextColor;
-    display: flex;
-    align-self: flex-end;
-    margin: 0 30px 30px 0;
-
-    & span {
-      display: block;
-      line-height: normal;
-      font-size: 17px;
-      font-family: 'Roboto', sans-serif;
-      margin-bottom: 12px;
-      text-align: right;
-      color: $secondaryTextColor;
-      padding:10px 30px
+      position: absolute;
+      top: -8px;
+      left: -1px;
     }
 
-    .email {
-      color: $primaryColor;
-    }
-
-    .socialIcon {
-      transition: all 0.5s ease;
-      border: 1px solid transparent;
-      border-radius: 100%;
+    & img {
       width: 40px;
       height: 40px;
-
-      &:hover {
-        background-color: $primaryColor;
-        opacity: 0.9;
-        border: 1px solid $primaryColor;
-        color: white;
-      }
+      padding: 5px;
     }
-
   }
+
+  & a {
+    @include myFont(70px, 700, $titleTextColor);
+    line-height: normal;
+    display: inline-block;
+    position: relative;
+    transform: translateY(-20px);
+    transition: all 0.8s ease;
+  }
+}
+
+.followMe {
+  color: $titleTextColor;
+  display: flex;
+  align-self: flex-end;
+  margin: 0 30px 30px 0;
+
+  & span {
+    display: block;
+    line-height: normal;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 12px;
+    text-align: right;
+    color: $secondaryTextColor;
+    padding: 10px 30px
+  }
+
+  .email {
+    color: $primaryColor;
+  }
+
+  .socialIcon {
+    transition: all 0.5s ease;
+    border: 1px solid transparent;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+
+    &:hover {
+      background-color: $primaryColor;
+      opacity: 0.9;
+      border: 1px solid $primaryColor;
+      color: white;
+    }
+  }
+
 }
