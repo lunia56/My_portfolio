@@ -18,16 +18,14 @@ const HamburgerButton = ({modalHandler,isOpen}) => {
                 animate={{
                     rotate: isOpen ? 45 : 0,
                     y: isOpen ? 0 : 16,
-                    backgroundColor: "#ffffff",
                     width: isOpen ? "40px" : "32px",
                 }}
                 className={s.hamburgerBar}
-
             />
             <motion.span
                 animate={{
                     opacity: isOpen ? 0 : 1,
-                    backgroundColor: "#ffffff",
+                    // backgroundColor: "#ffffff",
                     width: isOpen ? 0 : "32px",
                 }}
                 className={s.hamburgerBarMiddle}
@@ -37,7 +35,7 @@ const HamburgerButton = ({modalHandler,isOpen}) => {
                 animate={{
                     rotate: isOpen ? -45 : 0,
                     y: isOpen ? 0 : -16,
-                    backgroundColor: "#ffffff",
+                    // backgroundColor: "#ffffff",
                     width: isOpen ? "40px" : "32px",
                 }}
                 className={s.hamburgerBar}

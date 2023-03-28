@@ -10,14 +10,19 @@
 
   .hamburgerBar {
     display: block;
+    background-color: #ffffff;
     height: 4px;
-    left: 50%;
     position: absolute;
+    left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     width: 32px;
+    &:hover{
+      color : red;
+    }
   }
   .hamburgerBarMiddle{
+    background-color: #ffffff;
     display: block;
     height: 3px;
     left: 70%;

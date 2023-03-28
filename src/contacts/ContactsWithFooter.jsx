@@ -1,6 +1,5 @@
 import styleContainer from "../common/styles/Container.module.scss"
 import s from "./ContactsWithFooter.module.scss"
-import MyComponent from "../common/components/Test";
 import Footer from "../footer/Footer";
 import {ContactForm} from "./ContactForm";
 
@@ -30,9 +29,7 @@ function ContactsWithFooter() {
                             <p className={s.email}>lunia199425@gmail.com</p>
                         </div>
                     </div>
-
                     <ContactForm/>
-
                 </div>
             </div>
             <Footer/>

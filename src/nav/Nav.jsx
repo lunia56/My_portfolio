@@ -1,8 +1,6 @@
 import style from "./Nav.module.scss"
 import {SocialIcons} from "../common/components/SocialIcons";
-import { Link, animateScroll as scroll } from "react-scroll";
-import MyComponent from "../common/components/Test";
-import TextColorTransition from "../common/components/Test";
+import {Link} from "react-scroll";
 
 
 function Nav({modalHandler}) {
@@ -13,7 +11,6 @@ function Nav({modalHandler}) {
                 <Link  onClick={modalHandler} to="skillsBlock" smooth={true} duration={1000}>Skills</Link>
                 <Link  onClick={modalHandler} to="portfolioBlock" smooth={true} duration={1000}>Portfolio</Link>
                 <Link  onClick={modalHandler} to="contactsBlock" smooth={true} duration={1000}>Contacts</Link>
-                {/*<TextColorTransition text={'Hello world'}/>*/}
 
                 <div className={style.followMe}>
                     <div style={{display: 'flex', flexDirection: 'column'}}>

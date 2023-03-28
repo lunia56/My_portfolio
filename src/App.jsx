@@ -6,11 +6,28 @@ import Projects from "./projects/Projects";
 import CallToAction from "./callToAction/callToAction";
 import ContactsWithFooter from "./contacts/ContactsWithFooter";
 import Footer from "./footer/Footer";
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import {MyModal} from "./common/components/Modal/Modal";
+import ButtonToTop from "./common/components/ScrollBatton/ScrollBatton";
 
 
 function App() {
+
+
+    const [showButton, setShowButton] = useState(false);
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
+    const handleScroll = () => {
+        if (window.scrollY > window.innerHeight) {
+            setShowButton(true);
+        } else {
+            setShowButton(false);
+        }
+    };
 
     const [isVisible, setIsVisible] = useState(true);
     const [isOpen, setIsOpen] = useState(false);
@@ -34,6 +51,8 @@ function App() {
                     <Projects/>
                     <CallToAction/>
                     <ContactsWithFooter/>
+                    <ButtonToTop showButton={showButton} />
+
                     {/*<Footer/>*/}
                 </>
             )}
@@ -44,3 +63,4 @@ function App() {
 }
 
 export default App;
+

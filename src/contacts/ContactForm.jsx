@@ -7,7 +7,7 @@ export const ContactForm = () => {
     const onSubmit = (data) => {
         reset()
     }
-    return <div className={style.formContainer}>
+    return <div className={style.formContainer} id='contacts'>
         <form onSubmit={handleSubmit(onSubmit)}>
 
             <div className={style.formItem}>
