@@ -4,7 +4,7 @@
 .mainBlock {
   height: 100vh;
   background-image: url("https://demo.themecon.net/onlyme/html/images/home2-hero-bg.jpg");
-  backgroundSize: cover;
+  background-size: cover;
   background-repeat: no-repeat;
 
   .mainContainer {
@@ -33,9 +33,10 @@
       .heroContent {
         display: flex;
         flex-direction: column;
-        justify-content:  center;
+        justify-content: center;
         align-items: flex-start;
         width: 100%;
+
         .title {
           @include myFont(142px, bold, $textColor);
           background: url('https://demo.themecon.net/onlyme/html/images/hero-title-pettern-bg.png') no-repeat 95% center / contain;
@@ -58,7 +59,7 @@
         .linkDefault {
           display: flex;
           align-items: center;
-          margin-top: 15px;
+          margin-top: 30px;
 
           a {
             @include myFont(22px, 500, $textColor);
@@ -74,7 +75,7 @@
         width: 478px;
         height: 100%;
         background-image: url("../common/image/mainImage.jpeg");
-        background-position:-450px ;
+        background-position: -450px;
         background-repeat: no-repeat;
         position: absolute;
         z-index: 1;
@@ -88,7 +89,8 @@
           }
         }
       }
-      .texture{
+
+      .texture {
         position: absolute;
         z-index: 0;
         right: -80px;
@@ -108,14 +110,13 @@
 }
 
 
-
-
-.socialIconsBlock{
+.socialIconsBlock {
   width: 70px;
   height: 250px;
   position: absolute;
   bottom: 0;
   right: 0;
+
   & ul {
     height: 200px;
     display: flex;
@@ -123,6 +124,7 @@
     align-items: center;
     justify-content: space-between;
   }
+
   & li {
     list-style-type: none;
     width: 35px;

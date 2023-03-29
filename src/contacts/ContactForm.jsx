@@ -1,12 +1,22 @@
 import style from "./ContactForm.module.scss";
 import {useForm} from "react-hook-form";
+import axios from "axios";
 
 
 export const ContactForm = () => {
     const {register, handleSubmit, reset, formState: {errors, isValid}} = useForm({mode: 'onChange'})
-    const onSubmit = (data) => {
-        reset()
+
+
+    const onSubmit = (formData) => {
+        console.log('formData',formData)
+        axios.post('http://localhost:3002/sendMessage',formData)
+            .then((res)=>{
+                // alert('Your message has been send!')
+            console.log(res.data)
+            })
+        // reset()
     }
+
     return <div className={style.formContainer} id='contacts'>
         <form onSubmit={handleSubmit(onSubmit)}>
 
