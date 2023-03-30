@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/My_portfolio/static/css/main.6ecb8bac.css",
-    "main.js": "/My_portfolio/static/js/main.9999d26e.js",
+    "main.js": "/My_portfolio/static/js/main.fe109917.js",
     "static/js/787.1ed0c42c.chunk.js": "/My_portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/project3.png": "/My_portfolio/static/media/project3.ecc04c9f559c8f66cb6a.png",
+    "static/media/LuninIlyaCV.pdf": "/My_portfolio/static/media/LuninIlyaCV.54e9e1d48c7173b0d5c4.pdf",
     "static/media/project2.png": "/My_portfolio/static/media/project2.bf35572471bb78ff2a5e.png",
     "static/media/mainImage.jpeg": "/My_portfolio/static/media/mainImage.c18b46ae47d3d97dcd8c.jpeg",
     "static/media/project1.png": "/My_portfolio/static/media/project1.8784a78caea6b11b2a1b.png",
-    "static/media/LuninIlyaCV.pdf": "/My_portfolio/static/media/LuninIlyaCV.0193173e318707f7f874.pdf",
     "static/media/FuturaBoldBT.ttf": "/My_portfolio/static/media/FuturaBoldBT.59112448eb4527f4584c.ttf",
     "static/media/FutuBkIt.ttf": "/My_portfolio/static/media/FutuBkIt.3899ed62441b191e8291.ttf",
     "static/media/codewars.svg": "/My_portfolio/static/media/codewars.cc61d1a65b37854df9dd077088d532d6.svg",
@@ -20,11 +20,11 @@
     "static/media/linkedIn.svg": "/My_portfolio/static/media/linkedIn.29603363d50b6922f0cab647f3aa2152.svg",
     "static/media/telegram.svg": "/My_portfolio/static/media/telegram.845375a490673ce4396874a75b519956.svg",
     "main.6ecb8bac.css.map": "/My_portfolio/static/css/main.6ecb8bac.css.map",
-    "main.9999d26e.js.map": "/My_portfolio/static/js/main.9999d26e.js.map",
+    "main.fe109917.js.map": "/My_portfolio/static/js/main.fe109917.js.map",
     "787.1ed0c42c.chunk.js.map": "/My_portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6ecb8bac.css",
-    "static/js/main.9999d26e.js"
+    "static/js/main.fe109917.js"
   ]
 }
