@@ -10,11 +10,9 @@
   .mainContainer {
     flex-wrap: wrap;
     @media(max-width: 720px) {
-      .mainContainer {
-        justify-content: center;
-
-      }
+      justify-content: center;
     }
+
 
     .contentWrapper {
       height: 100vh;
@@ -23,12 +21,16 @@
       flex-flow: row;
       justify-content: center;
       position: relative;
-
-      .verticalLogo {
-        position: absolute;
-        top: 10px;
-        left: 150px;
+      @media(max-width: 860px) {
+        display: flex;
+        flex-direction: column;
       }
+      @media(max-width: 550px) {
+       align-items: center;
+        justify-content: center;
+      }
+
+
 
       .heroContent {
         display: flex;
@@ -36,6 +38,18 @@
         justify-content: center;
         align-items: flex-start;
         width: 100%;
+        transition: all 1.2s ease 0.4s;
+
+        @media(max-width: 860px) {
+          position: static;
+          margin-top: 100px;
+          transition: all 1.2s ease 0.4s;
+          align-items: flex-start;
+        }
+        @media(max-width: 550px) {
+
+        }
+
 
         .title {
           @include myFont(142px, bold, $textColor);
@@ -46,6 +60,23 @@
           display: inline-block;
           margin-left: -10px;
           transition: all 1.2s ease 0.4s;
+          @media(max-width: 1155px) {
+            @include myFont(100px, bold, $textColor);
+          }
+          @media(max-width: 830px) {
+            @include myFont(90px, bold, $textColor);
+          }
+          @media(max-width: 670px) {
+            @include myFont(80px, bold, $textColor);
+          }
+          @media(max-width: 550px) {
+            background:none;
+          }
+          @media(max-width: 391px) {
+            @include myFont(50px, bold, $textColor);
+          }
+
+
         }
 
         .description {
@@ -53,7 +84,12 @@
           margin-top: 16px;
           transition: all 1.2s ease 0.7s;
           z-index: 99;
-
+          @media(max-width: 670px) {
+            @include myFont(30px, 500, $textColor);
+          }
+          @media(max-width: 391px) {
+            @include myFont(24px, bold, $textColor);
+          }
         }
 
         .linkDefault {
@@ -63,14 +99,28 @@
 
           a {
             @include myFont(22px, 500, $textColor);
+            @media(max-width: 670px) {
+              @include myFont(20px, 500, $textColor);
+            }
           }
+
         }
 
         .linkSpan {
           @include linkSpan
         }
       }
-
+      .verticalLogo {
+        position: absolute;
+        top: 10px;
+        left: 150px;
+        @media(max-width: 860px) {
+          width: auto;
+        }
+        @media(max-width: 550px) {
+          display: none;
+        }
+      }
       .photo {
         width: 478px;
         height: 100%;
@@ -79,14 +129,17 @@
         background-repeat: no-repeat;
         position: absolute;
         z-index: 1;
-        right: 0px;
-        @media(max-width: 370px) {
-          & {
-            width: 250px;
-            height: 350px;
-            background-color: #ea53a8;
-            justify-content: center;
-          }
+        right: 0;
+        @media(max-width: 860px) {
+          position: static;
+          width: auto;
+          //background-position: ;
+        }
+        @media(max-width: 750px) {
+          background-position: max(-500px) ;
+        }
+        @media(max-width: 550px) {
+         display:none;
         }
       }
 
@@ -95,6 +148,11 @@
         z-index: 0;
         right: -80px;
         bottom: 30px;
+        @media(max-width: 860px) {
+          position: static;
+          width: 40px;
+          transform: rotate(90deg);
+        }
       }
     }
   }
@@ -116,6 +174,7 @@
   position: absolute;
   bottom: 0;
   right: 0;
+  z-index: 998;
 
   & ul {
     height: 200px;

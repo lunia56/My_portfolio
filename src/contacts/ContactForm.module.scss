@@ -1,61 +1,70 @@
 @import "../common/styles/mixins.module";
 @import "../common/styles/variables.module";
 
-.formContainer{
+.formContainer {
   padding-top: 100px;
-.formItem {
-  width: 350px;
-  height: 100%;
-  display: flex;
+  @media(max-width: 750px) {
+    min-width: 300px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .formItem {
+    max-width: 350px;
+    height: 100%;
+    display: flex;
+    @media(max-width: 750px) {
+      align-self: flex-start;
+      width: auto;
+    }
+    & input, textarea {
+      width: 100%;
+      background-color: transparent;
+      border: none;
+      border-bottom: $titleTextColor solid 1px;
+      color: $textColor;
+      font-size: 17px;
+      padding: 10px 0;
+      max-width: 100%;
+      margin-bottom: 20px;
 
-  & input, textarea {
-    width: 100%;
-    background-color: transparent;
-    border: none;
-    border-bottom: $titleTextColor solid 1px;
-
-    color: $textColor;
-    font-size: 17px;
-    padding: 10px 0;
-    max-width: 100%;
-    margin-bottom: 20px;
-
-    &:focus {
-      outline: none;
+      &:focus {
+        outline: none;
+      }
+    }
+    .errorMessage {
+      color: $primaryColor;
+      width: 180px;
     }
   }
-
-  .errorMessage {
-    color: $primaryColor;
-    width: 180px;
+  .formItemTextarea {
+    height: 100px;
   }
-}
-
-.formItemTextarea {
-  height: 100px;
-}
-
-.buttonSubmit {
-  border: none;
-  height: 50px;
-  padding: 0 40px;
-  text-transform: uppercase;
-  cursor: pointer;
-  border-radius: 3px;
-  background: $titleTextColor;
-  font-weight: 500;
-  color:$primaryColor;
-  transition: all 0.3s ease;
-  &:hover{
-    background-color: $primaryColor;
-    color: $textColor;
-  }
-  &:disabled{
+  .buttonSubmit {
+    border: none;
+    height: 50px;
+    padding: 0 40px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 3px;
     background: $titleTextColor;
-    color: $secondaryTextColor;
-    cursor: not-allowed;
-    opacity: 0.4;
+    font-weight: 500;
+    color: $primaryColor;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: $primaryColor;
+      color: $textColor;
+    }
+
+    &:disabled {
+      background: $titleTextColor;
+      color: $secondaryTextColor;
+      cursor: not-allowed;
+      opacity: 0.4;
+    }
+
   }
-}
 
 }

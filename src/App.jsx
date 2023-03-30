@@ -28,9 +28,9 @@ function App() {
             {isVisible && (
                 <>
                     <Main/>
-                    <Skills/>
                     <Projects/>
-                    <CallToAction/>
+                    <Skills/>
+                    {/*<CallToAction/>*/}
                     <ContactsWithFooter/>
                 </>
             )}

@@ -19,8 +19,7 @@ export const ContactForm = ({setIsOpen}) => {
         reset()
     }
 
-    return <div className={style.formContainer} id='contacts'>
-        <form onSubmit={handleSubmit(onSubmit)}>
+    return <form onSubmit={handleSubmit(onSubmit)} className={style.formContainer}  id='contacts'>
 
             <div className={style.formItem}>
                 <input type="text" placeholder={'Your Name'} {...register('name', {
@@ -62,5 +61,5 @@ export const ContactForm = ({setIsOpen}) => {
             >Send Here
             </button>
         </form>
-    </div>
+
 }

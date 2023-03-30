@@ -1,13 +1,11 @@
 @import '../styles/variables.module.scss';
+@import '../styles/mixins.module';
 .title{
   h2{
-    font-family: FuturaBoldBT;
-    font-size: 82px;
+    @include myFont(82px,700,$titleTextColor);
     text-transform: uppercase;
-    font-weight: 700;
     line-height: 1;
-    color: $titleTextColor;
-    margin-bottom: 50px;
+    margin: 50px 0;
     transform: translateY(-10px);
 
     -webkit-text-fill-color: transparent;
@@ -15,6 +13,13 @@
     -webkit-text-stroke-color: #333;
     @media (max-width: 1200px){
       font-size: 100px;
+
+    }
+    @media (max-width: 700px){
+      font-size: 70px;
+    }
+    @media (max-width: 400px){
+      font-size: 50px;
     }
   }
 }

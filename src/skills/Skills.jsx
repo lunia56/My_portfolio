@@ -46,7 +46,7 @@ const skills2 ={
     block3:{
         icon:<AntdIcon/>,
         title:"Ant Design",
-        description:" UI library based on React, providing modular and customizable components with accessibility and internationalization support."
+        description:" UI library based on React, providing modular and customizable components with accessibility and inter-nationalization support."
     },
 
 }
@@ -59,7 +59,7 @@ const skills3 ={
     block2:{
         icon: <AxiosIcon />,
         title: "Axios",
-        description: "Promise-based library used with Node.js and browser to make asynchronous JavaScript HTTP requests."
+        description: "Promise-based library used with Node.js and make asynchronous HTTP requests."
     },
     block3:{
         icon: <JestIcon />,

@@ -1,33 +1,44 @@
 @import "../common/styles/mixins.module";
+
 .skillsBlock {
-    min-height: 100vh;
-    background: url('https://demo.themecon.net/onlyme/html/images/project-bg.jpg');
-    backgroundSize: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    .skillsContainer{
-        flex-direction: column;
-        justify-content: space-between ;
-        height: 70%;
-        .skills{
-            min-height: 590px;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            @media (max-width: 690px){
-                .skills{
-                    justify-content: center;
-                }
-            }
-            .WaypointBlock {
-                opacity: 0;
-                transform: translateY(50px);
-                animation: fade 1s ease forwards;
-            }
-        }
+  min-height: 100vh;
+  background: url('https://demo.themecon.net/onlyme/html/images/project-bg.jpg');
+  display: flex;
+  align-items: center;
+@media(max-width: 400px){
+  height:1480px;
+}
+  .skillsContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 80%;
+
+    .skills {
+      min-height: 590px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      @media (max-width: 940px) {
+        width: 80%;
+      }
+      @media (max-width: 690px) {
+        justify-content: center;
+      }
+     .WaypointsBlock{
+       .WaypointBlock {
+         opacity: 0;
+         transform: translateY(50px);
+         animation: fade 1s ease forwards;
+         @media (max-width: 390px) {
+           justify-content: flex-start;
+           align-items: flex-start;
+         }
+       }
+     }
+
     }
+  }
 }
 
 

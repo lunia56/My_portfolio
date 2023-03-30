@@ -32,7 +32,7 @@ export const WaypointWrapper = ({data}) => {
     }
 
     return (
-        <div>
+        <div className={s.WaypointsBlock}>
             <Waypoint onEnter={() => onEnterHandler(setIsVisible1)}
                       onPositionChange={(props) => handlePositionChange('isVisible1', props)}
                       fireOnRapidScroll={false}
