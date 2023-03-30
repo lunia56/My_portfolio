@@ -1,0 +1,44 @@
+@import '../../styles/variables.module';
+@import '../../styles/mixins.module';
+.modal {
+  position: fixed;
+  bottom: 350px;
+  right: 500px;
+  width: 420px;
+  height: 200px;
+  z-index: 999;
+}
+
+.modalContent {
+  @include myFont(17px,normal,$textColor,'Futura Bk BT');
+  border-radius: 10px;
+  min-width: 100%;
+  height: 100%;
+  padding: 0 20px;
+  background-color: rgba(12, 12, 12);
+  text-align: center;
+  //opacity: 0.9;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  & button{
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color:$textColor;
+    text-transform: uppercase;
+    background: #F43534;
+    border-radius: 3px;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    transition: border 0.2s ease;
+    margin-top: 20px;
+    &:hover{
+      border:white 2px solid ;
+    }
+  }
+
+}

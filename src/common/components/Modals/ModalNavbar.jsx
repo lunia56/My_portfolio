@@ -1,10 +1,10 @@
 import React from "react";
-import s from './Modal.module.scss'
+import s from './ModalNavbar.module.scss'
 import Nav from "../../../nav/Nav";
 import {AnimatePresence, motion} from "framer-motion";
 
 
-export const MyModal = ({isOpen, modalHandler}) => {
+export const ModalNavBar = ({isOpen, modalHandler}) => {
 
     return (
         <div>
@@ -23,7 +23,6 @@ export const MyModal = ({isOpen, modalHandler}) => {
                     </motion.div>
                 )}
             </AnimatePresence>
-
         </div>
     )
 }

@@ -7,7 +7,7 @@ const HamburgerButton = ({modalHandler, isOpen}) => {
 
     const [hover, setHover] = useState(false)
     const toggleButton = () => modalHandler(!isOpen);
-    console.log('hover',hover)
+
     const variants = {
         hover: {width: '24px'},
         initial: {width: '32px'},

@@ -14,7 +14,7 @@
     border: none;
     border-bottom: $titleTextColor solid 1px;
 
-    color: #fff;
+    color: $textColor;
     font-size: 17px;
     padding: 10px 0;
     max-width: 100%;
@@ -23,8 +23,6 @@
     &:focus {
       outline: none;
     }
-
-
   }
 
   .errorMessage {
@@ -44,9 +42,20 @@
   text-transform: uppercase;
   cursor: pointer;
   border-radius: 3px;
-  background: #f43534;
+  background: $titleTextColor;
   font-weight: 500;
-  color: #fff;
+  color:$primaryColor;
+  transition: all 0.3s ease;
+  &:hover{
+    background-color: $primaryColor;
+    color: $textColor;
+  }
+  &:disabled{
+    background: $titleTextColor;
+    color: $secondaryTextColor;
+    cursor: not-allowed;
+    opacity: 0.4;
+  }
 }
 
 }

@@ -6,7 +6,7 @@ import Projects from "./projects/Projects";
 import CallToAction from "./callToAction/callToAction";
 import ContactsWithFooter from "./contacts/ContactsWithFooter";
 import React, {useState} from "react";
-import {MyModal} from "./common/components/Modal/Modal";
+import {ModalNavBar} from "./common/components/Modals/ModalNavbar";
 
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
         <div className="App">
 
 
-            <MyModal modalHandler={modalHandler} isOpen={isOpen}/>
+            <ModalNavBar modalHandler={modalHandler} isOpen={isOpen}/>
             <Header modalHandler={modalHandler} isOpen={isOpen}/>
             {isVisible && (
                 <>

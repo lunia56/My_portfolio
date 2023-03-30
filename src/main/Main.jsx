@@ -2,7 +2,7 @@ import style from "./Main.module.scss"
 import styleContainer from "../common/styles/Container.module.scss"
 import {SocialIcons} from "../common/components/SocialIcons";
 import {Link} from "react-scroll";
-import ButtonToTop from "../common/components/ScrollBatton/ScrollBatton";
+import ButtonToTop from "../common/components/ScrollBatton/BattonToTop";
 import {useEffect, useState} from "react";
 import CV from '../common/files/LuninIlyaCV.pdf'
 

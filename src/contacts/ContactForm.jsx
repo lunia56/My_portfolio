@@ -1,20 +1,22 @@
 import style from "./ContactForm.module.scss";
 import {useForm} from "react-hook-form";
 import axios from "axios";
+import {useState} from "react";
 
 
-export const ContactForm = () => {
+export const ContactForm = ({setIsOpen}) => {
+
+    const [requestWaiting, setRequestWaiting] = useState(false)
     const {register, handleSubmit, reset, formState: {errors, isValid}} = useForm({mode: 'onChange'})
 
-
     const onSubmit = (formData) => {
-        console.log('formData',formData)
-        axios.post('http://localhost:3002/sendMessage',formData)
-            .then((res)=>{
-                // alert('Your message has been send!')
-            console.log(res.data)
+        setRequestWaiting(true)
+        axios.post('http://localhost:3002/sendMessage', formData)
+            .then((res) => {
+                setIsOpen(true)
+                setRequestWaiting(false)
             })
-        // reset()
+        reset()
     }
 
     return <div className={style.formContainer} id='contacts'>
@@ -44,20 +46,21 @@ export const ContactForm = () => {
 
             <div className={style.formItem}>
                 <textarea className={style.formItemTextarea} placeholder={"Message"}
-                                                  {...register('messages', {
-                                                          required: false,
-                                                          maxLength: {
-                                                              value: 300,
-                                                              message: 'Maximum 300 characters...'
-                                                          }
-                                                      }
-                                                  )}/>
+                          {...register('messages', {
+                                  required: false,
+                                  maxLength: {
+                                      value: 300,
+                                      message: 'Maximum 300 characters...'
+                                  }
+                              }
+                          )}/>
                 <div>{errors.messages && <p className={style.errorMessage}>{errors.messages.message}</p>}</div>
             </div>
 
             <button className={style.buttonSubmit} type={'submit'}
-                   disabled={!isValid}
-            >Send Here</button>
+                    disabled={!isValid || requestWaiting}
+            >Send Here
+            </button>
         </form>
     </div>
 }

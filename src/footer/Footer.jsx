@@ -16,7 +16,7 @@ function Footer() {
             <div className={styleContainer.container + " " +s.footerContainer}>
 
                     <h3 className={s.title}>  <AiOutlineCopyrightCircle /> 2023 Developed By
-                        <Link to="mainBlock" smooth={true} duration={1000} ><a href={'#'}> Ilya Lunin</a></Link>. All Right Reserved</h3>
+                        <Link to="mainBlock" smooth={true} duration={1000} > Ilya Lunin</Link>. All Right Reserved</h3>
 
                 <div className={s.socialIconsBlock}>
                     <a href={'https://www.codewars.com/users/lunia56'} target="_blank"><img alt="svgImg"

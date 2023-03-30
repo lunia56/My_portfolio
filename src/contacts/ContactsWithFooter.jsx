@@ -2,9 +2,18 @@ import styleContainer from "../common/styles/Container.module.scss"
 import s from "./ContactsWithFooter.module.scss"
 import Footer from "../footer/Footer";
 import {ContactForm} from "./ContactForm";
+import {useState} from "react";
+import {ModalContacts} from "../common/components/Modals/ModalContacts";
 
 
 function ContactsWithFooter() {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const modalHandler = () => {
+        setIsOpen(!isOpen);
+        // setIsVisible(isVisible);
+    };
+
     return (
         <div className={s.contactsBlock} id='contactsBlock'>
             <div className={styleContainer.container + " " + s.contactsContainer}>
@@ -29,10 +38,11 @@ function ContactsWithFooter() {
                             <p className={s.email}>lunia199425@gmail.com</p>
                         </div>
                     </div>
-                    <ContactForm/>
+                    <ContactForm setIsOpen={setIsOpen}/>
                 </div>
             </div>
             <Footer/>
+            <ModalContacts modalHandler={modalHandler} isOpen={isOpen}/>
         </div>
     );
 }

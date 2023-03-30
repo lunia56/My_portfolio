@@ -1,6 +1,9 @@
 import { animateScroll as scroll } from 'react-scroll';
-import s from './ScrollBatton.module.scss'
+import s from './BattonToTop.module.scss'
+
+
 function ButtonToTop({ showButton }) {
+
     const handleClick = () => {
         scroll.scrollToTop();
     };
