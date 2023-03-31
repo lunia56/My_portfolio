@@ -11,7 +11,7 @@ export const ContactForm = ({setIsOpen}) => {
 
     const onSubmit = (formData) => {
         setRequestWaiting(true)
-        axios.post('http://localhost:3002/sendMessage', formData)
+        axios.post('https://gmail-nodejs-beryl.vercel.app/', formData)
             .then((res) => {
                 setIsOpen(true)
                 setRequestWaiting(false)
