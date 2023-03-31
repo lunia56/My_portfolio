@@ -2,7 +2,6 @@
 @import "../common/styles/variables.module";
 
 .formContainer {
-  border:red solid 1px;
   padding-top: 100px;
   @media(max-width: 750px) {
     min-width: 300px;

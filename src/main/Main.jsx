@@ -37,7 +37,7 @@ function Main() {
                         <img src="https://demo.themecon.net/onlyme/html/images/vertical-logo.png" alt="verticalLogo"/>
                     </span>
                     <div className={style.heroContent}>
-                        <h1 className={style.title}>Hi! I'm Ilya</h1>
+                        <Fade cascade duration={2000}style={{position:"relative", zIndex:'2'}}> <h1 className={style.title}>Hi! I'm Ilya</h1></Fade>
                         <ReactTypingEffect className={style.description} text={'Front-end Developer'}/>
                         <Fade cascade><div className={style.linkDefault}>
                             <a style={{position: 'absolute', zIndex: '998'}} target={'_blank'} href={CV}>Download CV

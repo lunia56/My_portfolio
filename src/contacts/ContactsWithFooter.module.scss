@@ -8,18 +8,11 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-  border:green solid 1px;
 
-  @media(max-width: 550px){
-
-  }
   .contactsContainer {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    border:red solid 1px;
-
-
     .title {
       display: flex;
       flex-direction: column;
@@ -34,8 +27,6 @@
     }
   }
   .contactBlock {
-    border:gold solid 1px;
-
     display: flex;
     height: 80%;
     width: 100%;
