@@ -18,7 +18,7 @@ function ContactsWithFooter() {
     return (
         <div className={s.contactsBlock} id='contactsBlock'>
             <div className={styleContainer.container + " " + s.contactsContainer}>
-                <Fade cascade>
+                <Fade cascade style={{width:'100%'}}>
                     <div className={s.title}>
                         <svg aria-hidden="true" width='60px' height='60px' color='#f43534' focusable="false"
                              data-prefix="fas" data-icon="envelope-open-text"

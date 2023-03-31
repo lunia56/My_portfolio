@@ -2,6 +2,7 @@ import style from "./ContactForm.module.scss";
 import {useForm} from "react-hook-form";
 import axios from "axios";
 import {useState} from "react";
+import {logDOM} from "@testing-library/react";
 
 
 export const ContactForm = ({setIsOpen}) => {
@@ -11,11 +12,13 @@ export const ContactForm = ({setIsOpen}) => {
 
     const onSubmit = (formData) => {
         setRequestWaiting(true)
-        axios.post('https://gmail-nodejs-beryl.vercel.app/', formData)
+        axios.post('https://gmail-nodejs-beryl.vercel.app/sendMessage', formData)
             .then((res) => {
                 setIsOpen(true)
                 setRequestWaiting(false)
-            })
+            }).catch((e)=>
+                console.log(e)
+        ).finally(()=> setRequestWaiting(false))
         reset()
     }
 

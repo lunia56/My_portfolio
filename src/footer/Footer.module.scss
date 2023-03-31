@@ -11,80 +11,55 @@
   width: 100%;
   border-top: #333333 1px solid;
 
-}
+  .footerContainer {
+    justify-content: space-between;
+    height: 100%;
+    width: 90%;
+    .title {
+      @include myFont(17px, normal, $textColor, 'FutuBkIt');
+      @font-face {
+        font-family: 'FutuBkIt';
+        src: url('../common/fonts/FutuBkIt.ttf')
+      }
+      background-color: transparent;
+      justify-content: flex-start;
+      margin-top: 0;
+      @media(max-width: 630px){
+        @include myFont(14px, normal, $textColor, 'FutuBkIt');
+      }
+      @media(max-width: 500px){
+        @include myFont(12px, normal, $textColor, 'FutuBkIt');
+      }
+      & a {
+        color: $primaryColor
+      }
+    }
 
-.title {
-  @include myFont(17px, normal, $textColor, 'FutuBkIt');
-  @font-face {
-    font-family: 'FutuBkIt';
-    src: url('../common/fonts/FutuBkIt.ttf')
-  }
-  background-color: transparent;
-  justify-content: flex-start;
-  margin-top: 0;
+    .socialIconsBlock {
+      display: flex;
 
-  & a {
-    color: $primaryColor
-  }
-}
+      & a {
+        margin: 0 10px;
+        width: 25px;
+        height: 25px;
+        transition: all 0.5s ease;
+        border: 1px solid transparent;
+        border-radius: 100%;
+        &:hover{
+          background-color: $primaryColor;
+          opacity: 0.9;
+          width: 32px;
+          height: 32px;
+          border: 1px solid $primaryColor;
+          color: white;
+        }
+      }
 
-
-.footerContainer {
-  justify-content: space-between;
-  height: 100%;
-  width: 90%;
-}
-
-.socialIconsBlock {
-  display: flex;
-
-  & a {
-    margin: 0 10px;
-    width: 25px;
-    height: 25px;
-    transition: all 0.5s ease;
-    border: 1px solid transparent;
-    border-radius: 100%;
-    &:hover{
-      background-color: $primaryColor;
-      opacity: 0.9;
-      width: 32px;
-      height: 32px;
-      border: 1px solid $primaryColor;
-      color: white;
     }
   }
-
 }
 
-.blocks {
-  display: flex;
-  justify-content: space-between;
-  width: 60%;
-}
 
-.block {
-  width: 50px;
-  height: 50px;
-  background-color: #39c3ea;
-}
 
-h3 svg {
-  margin-bottom: -3px;
-}
 
-@media (max-width: 470px) {
-  .blocks {
-    width: 100%;
-  }
-}
 
-@media (max-width: 350px) {
-  .blocks {
-    width: 100%;
-    justify-content: space-around;
-  }
-  .footerContainer {
-    width: 100%;
-  }
-}
