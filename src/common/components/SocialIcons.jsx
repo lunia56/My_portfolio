@@ -1,4 +1,4 @@
-import style from "../../nav/Nav.module.scss";
+import style from "../../components/nav/Nav.module.scss";
 import codewarsSvg from "../image/codewars.svg";
 import telegramSvg from "../image/telegram.svg";
 import linkedinSvg from "../image/linkedIn.svg";

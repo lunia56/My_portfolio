@@ -1,10 +1,10 @@
 import style from "./Main.module.scss"
-import styleContainer from "../common/styles/Container.module.scss"
-import {SocialIcons} from "../common/components/SocialIcons";
+import styleContainer from "../../common/styles/Container.module.scss"
+import {SocialIcons} from "../../common/components/SocialIcons";
 import {Link} from "react-scroll";
-import ButtonToTop from "../common/components/ScrollBatton/BattonToTop";
+import ButtonToTop from "../../common/components/ScrollBatton/BattonToTop";
 import React, {useEffect, useState} from "react";
-import CV from '../common/files/LuninIlyaCV.pdf'
+import CV from '../../common/files/LuninIlyaCV.pdf'
 import ReactTypingEffect from 'react-typing-effect';
 import {Fade} from "react-awesome-reveal";
 
@@ -37,7 +37,7 @@ function Main() {
                         <img src="https://demo.themecon.net/onlyme/html/images/vertical-logo.png" alt="verticalLogo"/>
                     </span>
                     <div className={style.heroContent}>
-                        <Fade cascade duration={2000}style={{position:"relative", zIndex:'2'}}> <h1 className={style.title}>Hi! I'm Ilya</h1></Fade>
+                        <Fade cascade duration={2000} style={{position:"relative", zIndex:'2'}}> <h1 className={style.title}>Hi! I'm Ilya</h1></Fade>
                         <ReactTypingEffect className={style.description} text={'Front-end Developer'}/>
                         <Fade cascade><div className={style.linkDefault}>
                             <a style={{position: 'absolute', zIndex: '998'}} target={'_blank'} href={CV}>Download CV

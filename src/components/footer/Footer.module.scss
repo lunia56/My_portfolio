@@ -1,5 +1,5 @@
-@import '../common/styles/variables.module';
-@import '../common/styles/mixins.module';
+@import '../../common/styles/variables.module';
+@import '../../common/styles/mixins.module';
 
 .footerBlock {
   height: 8%;
@@ -19,7 +19,7 @@
       @include myFont(17px, normal, $textColor, 'FutuBkIt');
       @font-face {
         font-family: 'FutuBkIt';
-        src: url('../common/fonts/FutuBkIt.ttf')
+        src: url('../../common/fonts/FutuBkIt.ttf')
       }
       background-color: transparent;
       justify-content: flex-start;

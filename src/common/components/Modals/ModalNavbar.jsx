@@ -1,6 +1,6 @@
 import React from "react";
 import s from './ModalNavbar.module.scss'
-import Nav from "../../../nav/Nav";
+import Nav from "../../../components/nav/Nav";
 import {AnimatePresence, motion} from "framer-motion";
 
 

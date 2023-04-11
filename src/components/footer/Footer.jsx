@@ -1,14 +1,11 @@
-import s from "./Footer.module.scss"
-import styleContainer from "../common/styles/Container.module.scss";
-import {FaCopyright} from "react-icons/fa";
-import {AiOutlineCopyrightCircle} from "react-icons/ai";
-import {SocialIcons} from "../common/components/SocialIcons";
-import {Link} from "react-scroll";
-import codewarsSvg from "../common/image/codewars.svg";
-import style from "../nav/Nav.module.scss";
-import telegramSvg from "../common/image/telegram.svg";
-import linkedinSvg from "../common/image/linkedIn.svg";
-import githubSvg from "../common/image/githubSvg.svg";
+import s from './Footer.module.scss'
+import styleContainer from '../../common/styles/Container.module.scss';
+import {AiOutlineCopyrightCircle} from 'react-icons/ai';
+import {Link} from 'react-scroll';
+import codewarsSvg from '../../common/image/codewars.svg';
+import telegramSvg from '../../common/image/telegram.svg';
+import linkedinSvg from '../../common/image/linkedIn.svg';
+import githubSvg from '../../common/image/githubSvg.svg';
 
 function Footer() {
     return (

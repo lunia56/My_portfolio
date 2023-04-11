@@ -1,10 +1,9 @@
 import './App.css';
-import Header from "./header/Header";
-import Main from "./main/Main";
-import Skills from "./skills/Skills";
-import Projects from "./projects/Projects";
-import CallToAction from "./callToAction/callToAction";
-import ContactsWithFooter from "./contacts/ContactsWithFooter";
+import Header from "./components/header/Header";
+import Main from "./components/main/Main";
+import Skills from "./components/skills/Skills";
+import Projects from "./components/projects/Projects";
+import ContactsWithFooter from "./components/contacts/ContactsWithFooter";
 import React, {useState} from "react";
 import {ModalNavBar} from "./common/components/Modals/ModalNavbar";
 
@@ -30,7 +29,6 @@ function App() {
                     <Main/>
                     <Projects/>
                     <Skills/>
-                    {/*<CallToAction/>*/}
                     <ContactsWithFooter/>
                 </>
             )}

@@ -1,7 +1,7 @@
 import s from "./Projects.module.scss"
-import styleContainer from "../common/styles/Container.module.scss"
-import {Title} from "../common/components/Title";
-import {SlickSlide} from "../common/components/SlickSlider/slick-slide";
+import styleContainer from "../../common/styles/Container.module.scss"
+import {Title} from "../../common/components/Title";
+import {SlickSlide} from "../../common/components/SlickSlider/slick-slide";
 import React from "react";
 
 function Projects() {

@@ -1,4 +1,4 @@
-import s from "../../projects/project/Project.module.scss";
+import s from "./Project.module.scss";
 import React from "react";
 import {Fade} from "react-awesome-reveal";
 

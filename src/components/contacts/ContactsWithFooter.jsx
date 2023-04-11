@@ -1,9 +1,9 @@
-import styleContainer from "../common/styles/Container.module.scss"
+import styleContainer from "../../common/styles/Container.module.scss"
 import s from "./ContactsWithFooter.module.scss"
 import Footer from "../footer/Footer";
 import {ContactForm} from "./ContactForm";
 import {useState} from "react";
-import {ModalContacts} from "../common/components/Modals/ModalContacts";
+import {ModalContacts} from "../../common/components/Modals/ModalContacts";
 import {Fade} from "react-awesome-reveal";
 
 
@@ -12,7 +12,6 @@ function ContactsWithFooter() {
 
     const modalHandler = () => {
         setIsOpen(!isOpen);
-        // setIsVisible(isVisible);
     };
 
     return (

@@ -1,4 +1,4 @@
-@import "../common/styles/mixins.module";
+@import "../../common/styles/mixins.module";
 
 .skillsBlock {
   min-height: 100vh;
@@ -25,17 +25,6 @@
       @media (max-width: 690px) {
         justify-content: center;
       }
-     .WaypointsBlock{
-       .WaypointBlock {
-         opacity: 0;
-         transform: translateY(50px);
-         animation: fade 1s ease forwards;
-         @media (max-width: 390px) {
-           justify-content: flex-start;
-           align-items: flex-start;
-         }
-       }
-     }
 
     }
   }

@@ -1,5 +1,5 @@
 import style from "./Nav.module.scss"
-import {SocialIcons} from "../common/components/SocialIcons";
+import {SocialIcons} from "../../common/components/SocialIcons";
 import {Link} from "react-scroll";
 import {Fade} from "react-awesome-reveal";
 
