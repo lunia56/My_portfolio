@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/My_portfolio/static/css/main.a0ada2bf.css",
-    "main.js": "/My_portfolio/static/js/main.062f590b.js",
+    "main.css": "/My_portfolio/static/css/main.23d83213.css",
+    "main.js": "/My_portfolio/static/js/main.5ce692a2.js",
     "static/js/787.1ed0c42c.chunk.js": "/My_portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/project3.png": "/My_portfolio/static/media/project3.ecc04c9f559c8f66cb6a.png",
     "static/media/LuninIlyaCV.pdf": "/My_portfolio/static/media/LuninIlyaCV.54e9e1d48c7173b0d5c4.pdf",
@@ -10,6 +10,7 @@
     "static/media/project1.png": "/My_portfolio/static/media/project1.8784a78caea6b11b2a1b.png",
     "static/media/FuturaBoldBT.ttf": "/My_portfolio/static/media/FuturaBoldBT.59112448eb4527f4584c.ttf",
     "static/media/FutuBkIt.ttf": "/My_portfolio/static/media/FutuBkIt.3899ed62441b191e8291.ttf",
+    "static/media/react-query-seeklogo.com.svg": "/My_portfolio/static/media/react-query-seeklogo.com.30df1fcdd8e7dab0fdea2d151c745b26.svg",
     "static/media/codewars.svg": "/My_portfolio/static/media/codewars.cc61d1a65b37854df9dd077088d532d6.svg",
     "static/media/slick.svg": "/My_portfolio/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/My_portfolio/static/media/slick.a4e97f5a2a64f0ab1323.eot",
@@ -19,12 +20,12 @@
     "index.html": "/My_portfolio/index.html",
     "static/media/linkedIn.svg": "/My_portfolio/static/media/linkedIn.29603363d50b6922f0cab647f3aa2152.svg",
     "static/media/telegram.svg": "/My_portfolio/static/media/telegram.845375a490673ce4396874a75b519956.svg",
-    "main.a0ada2bf.css.map": "/My_portfolio/static/css/main.a0ada2bf.css.map",
-    "main.062f590b.js.map": "/My_portfolio/static/js/main.062f590b.js.map",
+    "main.23d83213.css.map": "/My_portfolio/static/css/main.23d83213.css.map",
+    "main.5ce692a2.js.map": "/My_portfolio/static/js/main.5ce692a2.js.map",
     "787.1ed0c42c.chunk.js.map": "/My_portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a0ada2bf.css",
-    "static/js/main.062f590b.js"
+    "static/css/main.23d83213.css",
+    "static/js/main.5ce692a2.js"
   ]
 }
