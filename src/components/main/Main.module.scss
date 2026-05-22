@@ -3,7 +3,7 @@
 
 .mainBlock {
   height: 100vh;
-  background-image: url("https://demo.themecon.net/onlyme/html/images/home2-hero-bg.jpg");
+  background-image: url("../../assets/images/home2-hero-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -53,7 +53,7 @@
 
         .title {
           @include myFont(142px, bold, $textColor);
-          background: url('https://demo.themecon.net/onlyme/html/images/hero-title-pettern-bg.png') no-repeat 95% center / contain;
+          background: url('../../assets/images/hero-title-pettern-bg.png') no-repeat 95% center / contain;
           line-height: 0.8;
           position: relative;
           z-index: 99;

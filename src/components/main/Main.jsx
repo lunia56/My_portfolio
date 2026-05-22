@@ -8,6 +8,13 @@ import CV from '../../common/files/LuninIlyaCV.pdf'
 import ReactTypingEffect from 'react-typing-effect';
 import {Fade} from "react-awesome-reveal";
 
+// Local assets
+import verticalLogo from '../../assets/images/vertical-logo.png';
+import arrowRight from '../../assets/images/arrow-right-white.png';
+import dotTexture from '../../assets/images/dot-texture.png';
+import heroTitlePattern from '../../assets/images/hero-title-pettern-bg.png';
+import heroBg from '../../assets/images/home2-hero-bg.jpg';
+
 
 function Main() {
 
@@ -34,7 +41,7 @@ function Main() {
             <div className={`${styleContainer.container} ${style.mainContainer}`}>
                 <div className={style.contentWrapper}>
                     <span className={style.verticalLogo}>
-                        <img src="https://demo.themecon.net/onlyme/html/images/vertical-logo.png" alt="verticalLogo"/>
+                        <img src={verticalLogo} alt="verticalLogo"/>
                     </span>
                     <div className={style.heroContent}>
                         <Fade cascade duration={2000} style={{position:"relative", zIndex:'2'}}> <h1 className={style.title}>Hi! I'm Ilya</h1></Fade>
@@ -42,7 +49,7 @@ function Main() {
                         <Fade cascade><div className={style.linkDefault}>
                             <a style={{position: 'absolute', zIndex: '998'}} target={'_blank'} href={CV}>Download CV
                                 <span className={style.linkSpan}>
-                    <img src="https://demo.themecon.net/onlyme/html/images/arrow-right-white.png" alt="arrow"/>
+                    <img src={arrowRight} alt="arrow"/>
                             </span>
                             </a>
                         </div>
@@ -51,7 +58,7 @@ function Main() {
                             <Fade cascade>
                             <Link to="contacts" smooth={true} duration={1000}>Hire me
                                 <span className={style.linkSpan}>
-                    <img src="https://demo.themecon.net/onlyme/html/images/arrow-right-white.png" alt="arrow"/>
+                    <img src={arrowRight} alt="arrow"/>
                             </span>
                             </Link>
                             </Fade>
@@ -61,7 +68,7 @@ function Main() {
 
 
                     <span className={style.photo}/>
-                    <img className={style.texture} src="https://demo.themecon.net/onlyme/html/images/dot-texture.png"
+                    <img className={style.texture} src={dotTexture}
                          alt="texture"/>
 
                 </div>

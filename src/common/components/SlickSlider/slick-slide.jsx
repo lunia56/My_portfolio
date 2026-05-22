@@ -6,18 +6,19 @@ import 'slick-carousel/slick/slick-theme.css';
 import Project from "../../../components/projects/project/Project";
 import project1 from '../../image/project1.png'
 import project2 from '../../image/project2.png'
-import project3 from '../../image/project3.png'
+import project3 from '../../image/project3.png';
+import arrowRight from '../../../assets/images/arrow-right-white.png';
 
 function NextArrow({onClick}) {
     return (
         <button className={s.slickArrowRight} onClick={onClick}><img
-            src="https://demo.themecon.net/onlyme/html/images/arrow-right-white.png" alt="arrow"/></button>)
+            src={arrowRight} alt="arrow"/></button>)
 }
 
 function PrevArrow({onClick}) {
     return (
         <button className={s.slickArrowLeft} onClick={onClick}><img
-            src="https://demo.themecon.net/onlyme/html/images/arrow-right-white.png" alt="arrow"/></button>)
+            src={arrowRight} alt="arrow"/></button>)
 
 }
 

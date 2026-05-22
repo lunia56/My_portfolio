@@ -3,6 +3,7 @@ import styleContainer from "../../common/styles/Container.module.scss"
 import {Title} from "../../common/components/Title";
 import {SlickSlide} from "../../common/components/SlickSlider/slick-slide";
 import React from "react";
+import dotTexture from '../../assets/images/dot-texture.png';
 
 function Projects() {
 
@@ -12,7 +13,7 @@ function Projects() {
                 <Title title={'Projects'}/>
                 <div className={s.projects}>
                     <SlickSlide/>
-                    <img className={s.dotsImage} src="https://demo.themecon.net/onlyme/html/images/dot-texture.png"
+                    <img className={s.dotsImage} src={dotTexture}
                          alt="dots"/>
 
                 </div>
